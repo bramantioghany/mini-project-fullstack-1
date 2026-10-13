@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detail Laptop B dimuat melalui API backend.">
+  <title>Laptop B — TechStore</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/product-2.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./index.html">Tech<span>Store</span></a>
+    <nav aria-label="Navigasi utama">
+      <a href="./index.html">Beranda</a><a href="./product-1.html">Product 1</a><a href="./product-2.html" aria-current="page">Product 2 (API)</a>
+    </nav>
+  </header>
+  <main class="container">
+    <p class="breadcrumbs"><a href="./index.html">Beranda</a> / Product 2 (API)</p>
+    <div class="api-status" id="api-status" role="status" aria-live="polite">Memuat detail produk dari API…</div>
+    <section class="detail-layout" id="product-detail" hidden>
+      <div class="product-art product-art-two product-art-large" aria-label="Ilustrasi laptop dekoratif"><span>DEVICE 02</span><div class="laptop-shape"></div></div>
+      <article class="detail-copy">
+        <p class="eyebrow">DETAIL PRODUK · DATABASE API</p>
+        <h1 id="product-name">Nama produk</h1>
+        <p class="product-price" id="product-price"></p>
+        <p id="product-description"></p>
+        <div class="spec-list">
+          <div><span>Prosesor</span><strong id="product-processor">—</strong></div>
+          <div><span>Memori</span><strong id="product-memory">—</strong></div>
+          <div><span>Penyimpanan</span><strong id="product-storage">—</strong></div>
+          <div><span>Ketersediaan</span><strong id="product-stock">—</strong></div>
+        </div>
+        <p class="source-note">Sumber data: database SQL melalui <code>GET /api/products/2</code>.</p>
+      </article>
+    </section>
+    <section class="info-panel compact-panel"><div class="info-icon" aria-hidden="true">↔</div><div><h2>Alur data</h2><p>Browser → Express API → SQL database → JSON response → elemen halaman diperbarui oleh JavaScript.</p></div></section>
+  </main>
+  <footer class="site-footer"><p>© 2026 TechStore Demo · Mini Project Full-Stack.</p></footer>
+</body>
+</html>

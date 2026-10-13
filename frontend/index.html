@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Katalog laptop sederhana untuk demonstrasi mini project full-stack.">
+  <title>TechStore — Katalog Laptop</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./index.html" aria-label="TechStore beranda">Tech<span>Store</span></a>
+    <nav aria-label="Navigasi utama">
+      <a href="./index.html" aria-current="page">Beranda</a>
+      <a href="./product-1.html">Product 1</a>
+      <a href="./product-2.html">Product 2 (API)</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">MINI PROJECT FULL-STACK</p>
+      <h1>Temukan laptop yang sesuai dengan kebutuhanmu.</h1>
+      <p>Demo dua halaman detail produk: satu menggunakan data hardcode dan satu mengambil data melalui API dan database SQL.</p>
+      <div class="hero-actions">
+        <a class="button" href="./product-1.html">Lihat Product 1</a>
+        <a class="button button-secondary" href="./product-2.html">Lihat Product 2 (API)</a>
+      </div>
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <div><p class="eyebrow">KATALOG DEMO</p><h2>Produk pilihan</h2></div>
+        <p class="muted">Contoh data untuk kebutuhan pembelajaran.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-art product-art-one" aria-hidden="true"><span>DEVICE 01</span><div class="laptop-shape"></div></div>
+          <div class="product-card-body"><p class="eyebrow">DATA HARDCODE</p><h3>Laptop A</h3><p class="muted">Laptop untuk produktivitas harian.</p><a class="text-link" href="./product-1.html">Lihat detail →</a></div>
+        </article>
+        <article class="product-card">
+          <div class="product-art product-art-two" aria-hidden="true"><span>DEVICE 02</span><div class="laptop-shape"></div></div>
+          <div class="product-card-body"><p class="eyebrow">DATA DARI API</p><h3>Laptop B</h3><p class="muted">Detail dimuat dari backend dan SQL.</p><a class="text-link" href="./product-2.html">Lihat detail →</a></div>
+        </article>
+      </div>
+    </section>
+    <section class="info-panel">
+      <div class="info-icon" aria-hidden="true">↗</div>
+      <div><h2>Alur full-stack</h2><p>Halaman Product 2 meminta data ke endpoint <code>GET /api/products/2</code>. Backend mengambil data dari database lalu mengirim response JSON ke browser.</p></div>
+    </section>
+  </main>
+  <footer class="site-footer"><p>© 2026 TechStore Demo · Dibuat untuk mini project pembelajaran.</p></footer>
+</body>
+</html>

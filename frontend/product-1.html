@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Detail Laptop A dengan data hardcode.">
+  <title>Laptop A — TechStore</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/product-1.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./index.html">Tech<span>Store</span></a>
+    <nav aria-label="Navigasi utama">
+      <a href="./index.html">Beranda</a><a href="./product-1.html" aria-current="page">Product 1</a><a href="./product-2.html">Product 2 (API)</a>
+    </nav>
+  </header>
+  <main class="container">
+    <p class="breadcrumbs"><a href="./index.html">Beranda</a> / Product 1</p>
+    <section class="detail-layout">
+      <div class="product-art product-art-one product-art-large" aria-label="Ilustrasi laptop dekoratif"><span>DEVICE 01</span><div class="laptop-shape"></div></div>
+      <article class="detail-copy">
+        <p class="eyebrow">DETAIL PRODUK · HARDCODE</p>
+        <h1 id="product-name">Laptop A</h1>
+        <p class="product-price" id="product-price">Rp8.500.000</p>
+        <p id="product-description">Laptop untuk produktivitas harian, belajar, dan pekerjaan kantor.</p>
+        <div class="spec-list">
+          <div><span>Prosesor</span><strong id="product-processor">Intel Core i5</strong></div>
+          <div><span>Memori</span><strong id="product-memory">RAM 16 GB</strong></div>
+          <div><span>Penyimpanan</span><strong id="product-storage">SSD 512 GB</strong></div>
+          <div><span>Ketersediaan</span><strong id="product-stock">Tersedia</strong></div>
+        </div>
+        <button class="button" id="contact-button" type="button">Tanyakan produk</button>
+        <p class="feedback" id="contact-feedback" role="status" aria-live="polite"></p>
+        <p class="source-note">Sumber data: objek JavaScript statis di <code>product-1.js</code>.</p>
+      </article>
+    </section>
+    <section class="info-panel compact-panel"><div class="info-icon" aria-hidden="true">i</div><div><h2>Mengapa hardcode?</h2><p>Halaman ini sengaja menggunakan data statis sesuai requirement Product 1. Tidak ada request API untuk memuat detail produk.</p></div></section>
+  </main>
+  <footer class="site-footer"><p>© 2026 TechStore Demo · Mini Project Full-Stack.</p></footer>
+</body>
+</html>
